@@ -10,10 +10,10 @@ def calculateTFIDF(
 
     Given a set of documents, TFIDF is a measure of how frequent a particular word (or term) is
     in any specific document within that set.
-    numberOfDocuments - The number of documents you're considering.
-    numberOfDocumentsWithWord - The number of documents that contain the word
+    number_of_documents - The number of documents you're considering.
+    number_of_documents_with_word - The number of documents that contain the word
     you calculating TFIDF for.
-    countOfWordInDocument - The number of times the word appears in the document
+    count_of_word_in_document - The number of times the word appears in the document
     you're calculating TFIDF for.
     """
 
@@ -31,10 +31,10 @@ def solution(data, num_top_words):
     each document. To calculate the top words you should
     1) Count how many times a word appears in each document.
     2) Calculate the TFIDF for each word in each document.
-    3) Return the numberOfTopWords words with the highest TFIDF score.
-    documents - A dictionary with keys of the document names.
+    3) Return the num_top_words words with the highest TFIDF score.
+    data - A dictionary with keys of the document names.
     The values are arrays of every word in the document.
-    numberOfTopWords - The number of top words to return.
+    num_top_words - The number of top words to return.
 
     return - A dictionary with keys of the document names, and
     values of arrays of the top words.
