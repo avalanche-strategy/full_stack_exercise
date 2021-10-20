@@ -35,6 +35,17 @@ function calculateTFIDF(
  * @param  {Integer} numberOfTopWords  The number of top words to return.
  * @returns {Object} An object with keys of the document names, and
  * values of arrays of the top words.
+ * 
+ * Example input for 'data' parameter:
+ *   {
+ *       "doc 1": ['a','b','c']
+ *       "doc 2": ['a','d','e','a']
+ *       "doc 3": ['d','x','y','z']
+ *   }
+
+ *   Example of how TFIDF calculation will work for the above input.
+ *   tfidf['doc 1']['a'] = 3/2 * 1 
+ *   tfidf['doc 2']['a'] = 3/2 * 2 
  */
 function solution(documents, numberOfTopWords) {
   return { "document title": ["top word 1", "top word 2"] };
