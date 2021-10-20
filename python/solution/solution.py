@@ -38,6 +38,17 @@ def solution(data, num_top_words):
 
     return - A dictionary with keys of the document names, and
     values of arrays of the top words.
+
+    Example input for 'data' parameter:
+    {
+        "doc 1": ['a','b','c']
+        "doc 2": ['a','d','e','a']
+        "doc 3": ['d','x','y','z']
+    }
+
+    Example of how TFIDF calculation will work for the above input.
+    tfidf['doc 1']['a'] = 3/2 * 1 
+    tfidf['doc 2']['a'] = 3/2 * 2 
     """
 
     return {"document 1": ["word 1", "word 2"], "document 2": ["word 1", "word 2"]}
