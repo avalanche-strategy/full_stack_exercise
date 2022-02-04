@@ -44,11 +44,11 @@ function calculateTFIDF(
  *   }
 
  *   Example of how TFIDF calculation will work for the above input.
- *   tfidf['doc 1']['a'] = 3/2 * 1 
- *   tfidf['doc 2']['a'] = 3/2 * 2 
+ *   tfidf['doc 1']['a'] = calculateTFIDF(3,2,1) 
+ *   tfidf['doc 2']['a'] = calculateTFIDF(3,2,2)
  */
 function solution(documents, numberOfTopWords) {
-  return { "document title": ["top word 1", "top word 2"] };
+  return {"doc 1": ["word 1", "word 2"], "doc 2": ["word 1", "word 2"] , "doc 3": ["word 1", "word 2"]}
 }
 
 exports.solution = solution;

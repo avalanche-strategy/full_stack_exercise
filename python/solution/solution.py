@@ -47,8 +47,8 @@ def solution(data, num_top_words):
     }
 
     Example of how TFIDF calculation will work for the above input.
-    tfidf['doc 1']['a'] = 3/2 * 1 
-    tfidf['doc 2']['a'] = 3/2 * 2 
+    tfidf['doc 1']['a'] = calculateTFIDF(3,2,1) 
+    tfidf['doc 2']['a'] = calculateTFIDF(3,2,2) 
     """
 
-    return {"document 1": ["word 1", "word 2"], "document 2": ["word 1", "word 2"]}
+    return {"doc 1": ["word 1", "word 2"], "doc 2": ["word 1", "word 2"] , "doc 3": ["word 1", "word 2"]}
